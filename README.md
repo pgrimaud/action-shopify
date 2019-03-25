@@ -1,5 +1,7 @@
 # Shopify Theme for GitHub Actions
 
+This GitHub action is part of a list of my Actions : https://github.com/pgrimaud/actions.
+
 ## Usage
 
 To use the action simply add the following lines to your `.github/main.workflow`
