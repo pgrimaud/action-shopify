@@ -2,6 +2,8 @@
 
 ls -la
 ls -la /
+ls -la /github
+ls -la /home/runner/work/shopify-debut/shopify-debut
 pwd
 
 theme version
