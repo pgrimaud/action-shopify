@@ -3,7 +3,8 @@
 ls -la
 ls -la /
 ls -la /github
-ls -la /home/runner/work/shopify-debut/shopify-debut
+ls -la /github/workflow
+ls -la /github/workspace
 pwd
 
 theme version
