@@ -4,8 +4,8 @@ description: 'Deploy Shopify theme with Theme Kit'
 inputs:
   themePath:
     description: 'Path of the theme of your repository'
-    default: ''
-    required: /
+    default: '/'
+    required: true
   args:
     description: 'Args for Theme Kit'
     default: ''
