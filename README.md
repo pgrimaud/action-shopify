@@ -1,25 +1,25 @@
-# Shopify Theme for GitHub Actions
+# Publish Shopify theme for GitHub Actions
 
 This GitHub action is part of a list of my Actions : https://github.com/pgrimaud/actions.
 
 ## Usage
 
-To use the action simply add the following lines to your `.github/main.workflow`
+To use the action simply add the following lines to your workflow .yml file.
 
-![alt text](https://user-images.githubusercontent.com/1866496/52805959-17883a00-3088-11e9-9804-e5f2b2c4ad59.png)
+```yaml
+...
+  steps:
+      - uses: actions/checkout@v1
+      - name: Shopify
+        uses: pgrimaud/action-shopify@master
+        env:
+          SHOPIFY_PASSWORD: ${{ secrets.SHOPIFY_PASSWORD }}
+          SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
+          SHOPIFY_THEME_ID: ${{ secrets.SHOPIFY_THEME_ID }}
+          THEME_PATH: ${{ secrets.THEME_PATH }}
+```
 
-```
-action "Shopify" {
-  uses = "pgrimaud/actions/shopify@master"
-  args = ""
-  secrets = [
-    "SHOPIFY_PASSWORD",
-    "SHOPIFY_STORE_URL",
-    "SHOPIFY_THEME_ID",
-    "THEME_PATH"
-  ]
-}
-```
+You can see a repository with this action here : https://github.com/pgrimaud/shopify-debut
 
 ### Required Secrets
 
@@ -38,12 +38,37 @@ The optionnal argument you can add to improve theme deployment. Optionnal args a
 
 #### Examples
 
-* ```args = "--ignored-file=\"config/*\""```
-* ```args = "--timeout=30"```
+```yaml
+...
+  steps:
+      - uses: actions/checkout@v1
+      - name: Shopify
+        uses: pgrimaud/action-shopify@master
+        env:
+          SHOPIFY_PASSWORD: ${{ secrets.SHOPIFY_PASSWORD }}
+          SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
+          SHOPIFY_THEME_ID: ${{ secrets.SHOPIFY_THEME_ID }}
+          THEME_PATH: ${{ secrets.THEME_PATH }}
+        with:
+          args: --ignored-file=sections/*
+```
 
 Your can also combine multiple arguments : 
 
-* ```args = "--ignored-file=\"config/*\" --timeout=30"```
+```yaml
+...
+  steps:
+      - uses: actions/checkout@v1
+      - name: Shopify
+        uses: pgrimaud/action-shopify@master
+        env:
+          SHOPIFY_PASSWORD: ${{ secrets.SHOPIFY_PASSWORD }}
+          SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
+          SHOPIFY_THEME_ID: ${{ secrets.SHOPIFY_THEME_ID }}
+          THEME_PATH: ${{ secrets.THEME_PATH }}
+        with:
+          args: --ignored-file=sections/* --timeout=30
+```
 
 ## License
 
