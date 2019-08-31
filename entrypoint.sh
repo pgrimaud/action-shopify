@@ -2,9 +2,13 @@
 
 ls -la
 ls -la /
-ls -la /github
+
+ls -la /home/shopify
+
 ls -la /github/workflow
+
 ls -la /github/workspace
+
 pwd
 
 theme version
