@@ -1,15 +1,6 @@
 name: 'Publish Shopify theme'
 author: 'Pierre Grimaud'
-description: 'Deploy Shopify theme with Theme Kit'
-inputs:
-  themePath:
-    description: 'Path of the theme of your repository'
-    default: '/'
-    required: true
-  args:
-    description: 'Args for Theme Kit'
-    default: ''
-    required: false
+description: 'Publish Shopify theme with Theme Kit'
 runs:
   using: 'docker'
   image: 'Dockerfile'
