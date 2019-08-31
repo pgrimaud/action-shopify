@@ -1,11 +1,10 @@
 #!/bin/sh
 
 ls -la
+ls -la /
 pwd
 
-echo $SHOPIFY_STORE_URL
-echo $SHOPIFY_THEME_ID
-echo $THEME_PATH
+theme version
 
-theme configure --password=$SHOPIFY_PASSWORD --store=$SHOPIFY_STORE_URL --themeid=$SHOPIFY_THEME_ID --dir=$THEME_PATH $*
+theme configure -v --password=$SHOPIFY_PASSWORD --store=$SHOPIFY_STORE_URL --themeid=$SHOPIFY_THEME_ID --dir=$THEME_PATH $*
 theme deploy

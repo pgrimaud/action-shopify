@@ -18,6 +18,4 @@ RUN curl -s https://shopify.github.io/themekit/scripts/install.py | python
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
 
-RUN ls -la
-
 ENTRYPOINT ["/entrypoint.sh"]
