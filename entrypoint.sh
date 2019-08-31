@@ -1,15 +1,6 @@
 #!/bin/sh
 
-ls -la
-ls -la /
-
-ls -la /home/shopify
-
-ls -la /github/workflow
-
-ls -la /github/workspace
-
-pwd
+ls -la /github/workspace/theme
 
 theme version
 

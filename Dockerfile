@@ -6,7 +6,6 @@ RUN apt-get update && \
 
 RUN curl -s https://shopify.github.io/themekit/scripts/install.py | python
 
-COPY / /home/shopify
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
 
