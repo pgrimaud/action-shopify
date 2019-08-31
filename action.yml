@@ -1,4 +1,4 @@
-name: 'Shopify theme'
+name: 'Publish Shopify theme'
 author: 'Pierre Grimaud'
 description: 'Deploy Shopify theme with Theme Kit'
 inputs:
