@@ -1,4 +1,4 @@
-# Publish Shopify theme for GitHub Actions
+# Deploy Shopify theme for GitHub Actions
 
 This GitHub action is part of a list of my Actions : https://github.com/pgrimaud/actions.
 
