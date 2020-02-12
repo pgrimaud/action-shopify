@@ -1,6 +1,6 @@
-name: 'Publish Shopify theme'
+name: 'Deploy Shopify theme'
 author: 'Pierre Grimaud'
-description: 'Publish Shopify theme with Theme Kit'
+description: 'Deploy Shopify theme with Theme Kit'
 runs:
   using: 'docker'
   image: 'Dockerfile'
