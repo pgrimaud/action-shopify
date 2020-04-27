@@ -2,6 +2,8 @@
 
 This GitHub action is part of a list of my Actions : https://github.com/pgrimaud/actions.
 
+**A GitHub Actions+Shopify workflow was proposed here : https://github.com/freyum/shopify-workflow-poc**
+
 ## Usage
 
 To use the action simply add the following lines to your workflow .yml file.
