@@ -1,6 +1,6 @@
-name: 'Deploy Shopify theme'
+name: 'Update settings_data.json from shopify'
 author: 'Pierre Grimaud'
-description: 'Deploy Shopify theme with Theme Kit'
+description: 'Update settings_data.json from shopify with themekit'
 runs:
   using: 'docker'
   image: 'Dockerfile'
