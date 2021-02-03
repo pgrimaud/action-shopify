@@ -5,7 +5,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN python -m pip install six
-RUN curl -s https://shopify.github.io/themekit/scripts/install.py | python
+RUN curl -s https://raw.githubusercontent.com/Shopify/themekit/master/scripts/install.py | python
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
