@@ -11,7 +11,7 @@ To use the action simply add the following lines to your workflow .yml file.
 ```yaml
 ...
   steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Shopify
         uses: pgrimaud/action-shopify@master
         env:
