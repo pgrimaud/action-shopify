@@ -1,5 +1,14 @@
 # Deploy Shopify theme for GitHub Actions
 
+### NEW since 2.2 : this action is now based on a pre-built image
+```
+Using a pre-built image saved 115% of time on this action set-up
+```
+
+⚠️ Docker image is located here : https://github.com/pgrimaud/docker-images/tree/master/themekit
+
+## Description
+
 This GitHub action is part of a list of my Actions : https://github.com/pgrimaud/actions.
 
 **A GitHub Actions+Shopify workflow was proposed here : https://github.com/freyum/shopify-workflow-poc**
