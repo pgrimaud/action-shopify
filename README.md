@@ -52,7 +52,7 @@ The optional argument you can add to improve theme deployment. Optional args are
 ```yaml
 ...
   steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Shopify
         uses: pgrimaud/action-shopify@master
         env:
@@ -69,7 +69,7 @@ Your can also combine multiple arguments :
 ```yaml
 ...
   steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Shopify
         uses: pgrimaud/action-shopify@master
         env:
